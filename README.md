@@ -2,11 +2,20 @@
 
 <img src="icon.png" alt="Black plue logo on a white background" width="128" height="128">
 
-The plue learning workspace in a Mac app. Open it to sign in and continue with
-your existing account, courses and saved library. The app opens the login page
-directly, without the marketing website.
+The plue learning workspace in a Mac app, using the same account, courses and
+saved library as the web app.
 
-[Download Plue.dmg](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/download/v1.0.1/Plue.dmg)
+> Version 1.0.2 and its account-first setup guide are being prepared. The links
+> below target the planned release; publication and Apple notarization are not
+> yet confirmed. The [current 1.0.1 release](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/tag/v1.0.1) remains available.
+
+[Get started on Mac](https://app.plue.si/sign-up?returnTo=%2Fget-started%2Fmac)
+
+Create your account or sign in first. The setup guide then starts the download
+and shows how to install the app, with a download button if needed. The prepared
+1.0.2 installer has a designed window with an arrow from plue to Applications.
+
+[Download Plue.dmg](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/download/v1.0.2/Plue.dmg)
 
 [Release notes and previous downloads](https://github.com/cranesxbrand-dotcom/plue-downloads/releases)
 
@@ -22,11 +31,14 @@ are not published here.
 
 ## Install or update
 
-1. Download [Plue.dmg](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/download/v1.0.1/Plue.dmg).
-2. Open **Plue.dmg** and drag **plue for Mac** into **Applications**.
-3. Open **plue for Mac** from Applications.
-4. Choose **Continue in browser**, sign in to your plue account, and confirm the
-   account shown. Return to the Mac window to continue.
+1. [Create your account or sign in](https://app.plue.si/sign-up?returnTo=%2Fget-started%2Fmac)
+   to open the Mac setup guide.
+2. Open **Plue.dmg** from Downloads. If the download did not start, use
+   **Download Plue.dmg** in the guide.
+3. Follow the installer arrow and drag **plue for Mac** into **Applications**.
+4. Open **plue for Mac** from Applications.
+5. Choose **Continue in browser** and confirm the same account you just signed
+   in with. Return to the Mac window to continue.
 
 To update an existing **plue for Mac**, quit it before replacing the app in
 Applications. The installer does not remove your account or saved learning data.
@@ -38,17 +50,18 @@ automatically. Install a later signed release manually when one is available.
 
 ## Verify a download
 
-Published installers are signed with Developer ID, notarized by Apple and include
-a stapled notarization ticket. Release notes include their exact size and hash.
+Before publication, installers must be signed with Developer ID, notarized by
+Apple and include a stapled notarization ticket. Release notes must include their
+exact size and hash. Those checks are still pending for version 1.0.2.
 
-Download **Plue.dmg** and [Plue.dmg.sha256](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/download/v1.0.1/Plue.dmg.sha256)
+Download **Plue.dmg** and [Plue.dmg.sha256](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/download/v1.0.2/Plue.dmg.sha256)
 into the same folder, then run from that folder:
 
 ```sh
 shasum -a 256 -c Plue.dmg.sha256
 ```
 
-The versioned installer `plue-for-Mac-1.0.1-arm64.dmg` is the same file with a
-different name. Its existing `SHA256SUMS` file remains available on the release.
+The versioned installer `plue-for-Mac-1.0.2-arm64.dmg` will be the same file with a
+different name. Its `SHA256SUMS` file will be included on the release.
 
 Do not bypass macOS security warnings if a download fails verification.
