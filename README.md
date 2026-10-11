@@ -6,7 +6,9 @@ The plue learning workspace in a Mac app. Open it to sign in and continue with
 your existing account, courses and saved library. The app opens the login page
 directly, without the marketing website.
 
-[Download from Releases](https://github.com/cranesxbrand-dotcom/plue-downloads/releases)
+[Download Plue.dmg](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/download/v1.0.1/Plue.dmg)
+
+[Release notes and previous downloads](https://github.com/cranesxbrand-dotcom/plue-downloads/releases)
 
 ## Requirements
 
@@ -20,8 +22,8 @@ are not published here.
 
 ## Install or update
 
-1. Download the `.dmg` file from a release.
-2. Open it and drag **plue for Mac** into **Applications**.
+1. Download [Plue.dmg](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/download/v1.0.1/Plue.dmg).
+2. Open **Plue.dmg** and drag **plue for Mac** into **Applications**.
 3. Open **plue for Mac** from Applications.
 4. Choose **Continue in browser**, sign in to your plue account, and confirm the
    account shown. Return to the Mac window to continue.
@@ -39,10 +41,14 @@ automatically. Install a later signed release manually when one is available.
 Published installers are signed with Developer ID, notarized by Apple and include
 a stapled notarization ticket. Release notes include their exact size and hash.
 
-Download the installer and `SHA256SUMS` into the same folder, then run:
+Download **Plue.dmg** and [Plue.dmg.sha256](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/download/v1.0.1/Plue.dmg.sha256)
+into the same folder, then run from that folder:
 
 ```sh
-shasum -a 256 -c SHA256SUMS
+shasum -a 256 -c Plue.dmg.sha256
 ```
+
+The versioned installer `plue-for-Mac-1.0.1-arm64.dmg` is the same file with a
+different name. Its existing `SHA256SUMS` file remains available on the release.
 
 Do not bypass macOS security warnings if a download fails verification.
