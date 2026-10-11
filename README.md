@@ -6,8 +6,8 @@ The plue learning workspace in a Mac app, using the same account, courses and
 saved library as the web app.
 
 > Version 1.0.2 and its account-first setup guide are being prepared. The links
-> below target the planned release; publication and Apple notarization are not
-> yet confirmed. The [current 1.0.1 release](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/tag/v1.0.1) remains available.
+> below target the planned release; Apple notarization has passed, while
+> publication and the final native visual check are still pending. The [current 1.0.1 release](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/tag/v1.0.1) remains available.
 
 [Get started on Mac](https://app.plue.si/sign-up?returnTo=%2Fget-started%2Fmac)
 
@@ -52,7 +52,7 @@ automatically. Install a later signed release manually when one is available.
 
 Before publication, installers must be signed with Developer ID, notarized by
 Apple and include a stapled notarization ticket. Release notes must include their
-exact size and hash. Those checks are still pending for version 1.0.2.
+exact size and hash. Those checks have passed for version 1.0.2.
 
 Download **Plue.dmg** and [Plue.dmg.sha256](https://github.com/cranesxbrand-dotcom/plue-downloads/releases/download/v1.0.2/Plue.dmg.sha256)
 into the same folder, then run from that folder:
@@ -60,8 +60,5 @@ into the same folder, then run from that folder:
 ```sh
 shasum -a 256 -c Plue.dmg.sha256
 ```
-
-The versioned installer `plue-for-Mac-1.0.2-arm64.dmg` will be the same file with a
-different name. Its `SHA256SUMS` file will be included on the release.
 
 Do not bypass macOS security warnings if a download fails verification.
